@@ -1,12 +1,17 @@
 #include <stdio.h>
 
+int data;
+
+void apple_set(int value){
+    data=value;
+}
+
+int apple_get(){
+    return data;
+}
+
 int main(){
-int oranges=5;
-int apples=oranges;
 
-apples=11;
-
-printf("oranges=%d and apples=%d \n", oranges,apples);
-
-return 0;
+    printf("apples=%d\n",apple_get());
+    return 0;
 }
