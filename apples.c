@@ -1,4 +1,4 @@
-int data;
+static int data;
 
 void apple_set(int value){
     data=value;
